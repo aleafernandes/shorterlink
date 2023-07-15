@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+</head>
+<body>
+
+  <header class="main-nav">
+    <img class="logo" src="/images/logo.svg" alt="logo">
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+    <div class="bttns">
+      <button class="logBtn">Login</button>
+      <button class="signBtn">Sign Up</button>
+    </div>
+    <nav id="hiddenBtn" class="nav-menu-mobile">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+      <div class="bttns-mob">
+        <button class="logBtn">Login</button>
+        <button class="signBtn">Sign Up</button>
+      </div>
+    </nav>
+    <button id="burger" class="burger" onclick="openMenu()"><img src="/images/burger-menu-svgrepo-com.svg" alt="burger menu"></button>
+  </header>
+
+  <section class="main-section">
+    <div class="main-section-info">
+      <h1>
+        More than just shorter links
+      </h1>
+      <p>
+        Build your brand’s recognition and get detailed insights on how your links are performing.
+      </p>
+      <button class="get-startedBtn">Get Started</button>
+    </div>
+    <img src="/images/illustration-working.svg" alt="someone working">
+  </section>
+
+  <section class="sh-sect">
+    <div id="shortlink-section" class="shortlink-section">
+      <input class="shortlink-input" id="shortlink-input" type="text" placeholder="Shorten a link here...">
+      <button id="genBtn" class="gen-link-btn">Shorten It!</button> 
+    </div>
+    <div id="aftersect" class="pos-shortlink-section">
+      <div id="usedLink"></div>
+      <div id="shtLink"></div>
+      <button id="copyBtn" class="gen-link-btn" onclick="copy()">Copy</button> 
+    </div>
+  </section>
+  <section class="pros">
+    <div class="stats">
+      <h1>Advanced Statistics</h1>
+      <p>Track how your links are performing across the web with our 
+        advanced statistics dashboard.</p>
+    </div>
+    <div class="cards">
+      <div class="container | c1">
+        <div class="icon">
+          <img src="/images/icon-brand-recognition.svg">
+        </div>
+        <div class="containerText">
+          <h2>
+            Brand Recognition
+          </h2>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+      </div>
+      <div class="container | c2">
+        <div class="icon">
+          <img src="/images/icon-detailed-records.svg">
+        </div>
+        <div class="containerText">
+          <h2>
+            Detailed Records
+          </h2>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+          </p>
+        </div>
+      </div>
+      <div class="container | c3">
+        <div class="icon">
+          <img src="/images/icon-fully-customizable.svg">
+        </div>
+        <div class="containerText">
+          <h2>Fully Customizable</h2>
+          <p>
+            Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="boost-sec"> 
+    <h1>
+      Boost your links today
+    </h1>
+    <button class="scnd-get-startedBtn">Get Started</button>
+  </section>
+  <footer class="footer-section">
+    <img class="logo" src="/images/logo-footer.svg" alt="logo">
+    <div class="fotter-links">
+      <p><span><a href="#">Features</a></span></p>
+      <p><a href="#">Link Shortening</a></p>
+      <p><a href="#">Branded Links</a></p>
+      <p><a href="#">Analytics</a></p>
+    </div>
+    <div class="fotter-links">
+      <p><span><a href="#">Resources</a></span></p>
+      <p><a href="#">Blog</a></p>
+      <p><a href="#">Developers</a></p>
+      <p><a href="#">Support</a></p>
+    </div>
+    <div class="fotter-links">
+      <p><span><a href="#">Company</span></p>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Our Team</a></p>
+      <p><a href="#">Careers</a></p>
+      <p><a href="#">Contact</a></p>
+    </div>
+    <div class="social-links">
+      <img src="/images/icon-facebook.svg" alt="facebook icon">
+      <img src="/images/icon-twitter.svg" alt="twitter icon">
+      <img src="/images/icon-pinterest.svg" alt="pinterest icon">
+      <img src="/images/icon-instagram.svg" alt="instagram icon">
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/aleafernandes">Alexandre Fernandes</a>.
+  </div>
+  
+</body>
+<script src="app.js"></script>
+</html>
